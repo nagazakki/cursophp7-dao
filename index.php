@@ -37,10 +37,17 @@
 	$aluno->insert();
 	echo $aluno;*/
 
+	/*
+	Altera um usuario na tablea
 	$usuario = new Usuario();
 	$usuario->loadById(4);
 	$usuario->update("Professor", "!@#$%");
 
+	echo $usuario;*/
+
+	$usuario = new Usuario();;
+	$usuario->loadById(3);
+	$usuario->delete();
 	echo $usuario;
 
 
