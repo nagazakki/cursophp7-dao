@@ -23,9 +23,26 @@
 
 	//Carrega um usuário autenticado
 
-	$user = new Usuario();
-	$user->login("Paloma", "654321");
-	echo $user;
+	//$user = new Usuario();
+	/*$user->login("Paloma", "654321");
+	echo $user;*/
+
+	/*Comando inserir no database*/
+
+
+	/*
+		Insere novos usuários no Banco de Dados
+	$aluno = new Usuario("lombra", "marleyBrown321");
+
+	$aluno->insert();
+	echo $aluno;*/
+
+	$usuario = new Usuario();
+	$usuario->loadById(4);
+	$usuario->update("Professor", "!@#$%");
+
+	echo $usuario;
+
 
 
  ?>
